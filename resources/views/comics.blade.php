@@ -10,7 +10,7 @@
         @foreach($volumi as $volume)
            <div class="card">
                <img src="{{$volume['thumb']}}" alt="">
-               <div>
+               <div class="layover">
                    <h2><a href="">{{$volume['title']}}</a></h2>
                </div>
            </div>

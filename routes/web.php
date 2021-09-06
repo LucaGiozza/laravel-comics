@@ -20,7 +20,7 @@ Route::get('/', function () {
  Route::get('/comics', function () {
 
     $comics = config('comics-database');
-    $data = ['formati' => $comics];
+    $data = ['volumi' => $comics];
      return view('comics', $data);
  })->name('fumetti');
 

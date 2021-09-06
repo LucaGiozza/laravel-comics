@@ -10,15 +10,15 @@
           <nav>
               <ul>
                   <li><a href="{{ route('personaggi')}}">characters</a></li>
-                  <li><a href="">comics</a></li>
-                  <li><a href="">movies</a></li>
-                  <li><a href="">tv</a></li>
-                  <li><a href="">games</a></li>
-                  <li><a href="">collectibles</a></li>
-                  <li><a href="">videos</a></li>
-                  <li><a href="">fans</a></li>
-                  <li><a href="">news</a></li>
-                  <li><a href="">shop</a></li>
+                  <li><a href="{{route ('fumetti')}}">comics</a></li>
+                  <li><a href="{{ route ('film')}}">movies</a></li>
+                  <li><a href="{{route ('televisione')}}">tv</a></li>
+                  <li><a href="{{ route ('giochi')}}">games</a></li>
+                  <li><a href="{{ route ('collezione')}}">collectibles</a></li>
+                  <li><a href="{{ route ('video')}}">videos</a></li>
+                  <li><a href="{{ route ('fan')}}">fans</a></li>
+                  <li><a href="{{ route ('notizie')}}">news</a></li>
+                  <li><a href="{{ route ('negozio')}}">shop</a></li>
               </ul>
           </nav>
 

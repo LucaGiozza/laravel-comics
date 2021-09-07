@@ -7,11 +7,12 @@
 
 <div class="container">
     <div class="card-container">
-        @foreach($volumi as $volume)
+        @foreach($volumi as $key => $volume)
+        
            <div class="card">
                <img src="{{$volume['thumb']}}" alt="">
                <div class="layover">
-                   <h2><a href="">{{$volume['title']}}</a></h2>
+                   <h2><a href="{{route('dettaglio-comics', ['id' => $key ])}}">{{$volume['title']}}</a></h2>
                </div>
            </div>
            

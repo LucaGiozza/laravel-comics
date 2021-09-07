@@ -39,3 +39,45 @@ a {
   text-decoration: none;
   font-style: none;
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 3);
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+.card h2 {
+  margin-bottom: 50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  width: 30%;
+  background-color: black;
+  padding: 2px 3px;
+}
+.card h2 a {
+  color: white;
+  opacity: 60%;
+}
+.card h2 a:hover {
+  opacity: 100%;
+}
+
+.det {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.det h2 {
+  margin-bottom: 50px;
+}
+.det p {
+  margin-bottom: 10px;
+}

@@ -24,6 +24,18 @@ Route::get('/', function () {
      return view('comics', $data);
  })->name('fumetti');
 
+//  rotta dei dettagli
+
+ Route::get('/detail/{id}', function ($id) {
+    $comics = config('comics-database');
+    $data = ['volumi' => $comics[$id]];
+
+    return view('dettaglio', $data);
+})->name('dettaglio-comics');
+
+
+
+
 Route::get('/movies', function () {
     return view('movies');
 })->name('film');
